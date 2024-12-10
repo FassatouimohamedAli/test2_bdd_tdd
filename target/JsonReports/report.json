@@ -1,0 +1,88 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-10T14:38:43.552Z",
+        "line": 7,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-fns;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters username and password",
+            "match": {
+              "location": "Steps.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on login button",
+            "match": {
+              "location": "Steps.LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "Steps.LoginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketestFeature"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login fns",
+    "description": "",
+    "id": "feature-to-test-login-fns",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": [
+      {
+        "name": "@smoketestFeature",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

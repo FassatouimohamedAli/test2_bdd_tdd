@@ -27,5 +27,25 @@
 </dependency>
 
 
+
+
   </dependencies>
+  
+  <build>
+        <plugins>
+            <!-- Plugin Surefire pour exécuter les tests avec Cucumber -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <!-- Plugin Cucumber pour l'exécution des tests Gherkin -->
+
+        </plugins>
+    </build>
 </project>

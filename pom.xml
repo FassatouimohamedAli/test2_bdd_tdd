@@ -30,6 +30,35 @@
 
 
   </dependencies>
-  
+  <build>
+    <plugins>
+        <!-- Surefire Plugin for Unit Tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <includes>
+                    <include>**/*Test.java</include>
+                </includes>
+            </configuration>
+        </plugin>
+
+        <!-- Cucumber Maven Plugin -->
+        <plugin>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-maven-plugin</artifactId>
+            <version>7.13.0</version>
+            <executions>
+                <execution>
+                    <phase>integration-test</phase>
+                    <goals>
+                        <goal>test</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
   
 </project>
